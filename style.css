@@ -1,0 +1,44 @@
+body {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./images/main.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  width: 100%;
+  background: linear-gradient(45deg, red, blue);
+  padding: 70px 0px;
+  color: white;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.task-btn {
+  background: linear-gradient(45deg, red, blue);
+  color: white;
+}
+
+.task-btn:hover {
+  color: white;
+}
+
+.todo-title-wrapper {
+  height: 50px;
+}
+
+.todo-title-wrapper h3 {
+  color: white;
+}
+
+.hero img {
+  height: 50px;
+  margin-bottom: 22px;
+}
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: 5px;
+}
