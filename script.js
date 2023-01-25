@@ -1,9 +1,10 @@
 var tasks = [];
 tasks = JSON.parse(localStorage.getItem("allTasks"));
+tasks = tasks == null ? [] : tasks;
 const render = (data) => {
   const element = document.getElementById("content");
   element.innerHTML = "";
-  data.map((val, key) => {
+  data?.map((val, key) => {
     element.innerHTML += `
         <div class="card border-0 shadow-sm mt-3">
             <div class="card-body">
