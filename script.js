@@ -37,6 +37,7 @@ document.getElementById("addForm").addEventListener("submit", (e) => {
   tasks.push({ todo: todo, status: "pending" });
   render(tasks);
   addModal.hide();
+  document.getElementById("addTask").value = "";
 });
 
 console.log(tasks);
