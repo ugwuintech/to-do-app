@@ -8,9 +8,23 @@ body {
 
 .hero {
   width: 100%;
-  background: linear-gradient(45deg, red, blue);
   padding: 70px 0px;
   color: white;
+}
+.hero a {
+  text-decoration: none;
+  font-weight: 400px;
+  color: white;
+}
+
+.red-bg {
+  background: linear-gradient(45deg, red, blue);
+}
+.yellow-bg {
+  background: linear-gradient(45deg, yellow, blue);
+}
+.green-bg {
+  background: linear-gradient(45deg, green, blue);
 }
 
 h1 {
@@ -18,7 +32,6 @@ h1 {
 }
 
 .task-btn {
-  background: linear-gradient(45deg, red, blue);
   color: white;
 }
 
@@ -42,4 +55,30 @@ h1 {
   font-size: 40px;
   font-weight: 700;
   margin-right: 5px;
+}
+
+.settings {
+  position: fixed;
+  top: 450px;
+  right: 0px;
+  background-color: rgba(4, 9, 30);
+  backdrop-filter: blur("15px");
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+
+.settings i {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.hidden-icons {
+  /* display: none; */
 }

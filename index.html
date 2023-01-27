@@ -21,21 +21,63 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
+    <div class="hero red-bg" id="hero">
       <div class="container">
         <span class="title">ToDo List</span
         ><span><img src="./images/check.png" alt="" /></span>
         <h3>Become the better version of yourself</h3>
+        <span
+          ><small
+            >Created with <i class="fa-regular fa-heart"></i> by
+            <button
+              style="border: none; border-radius: 5px; background-color: blue"
+            >
+              <a href="https://twitter.com/ugwuintech">@ugwuintech</a
+              ><i class="fa-brands fa-twitter"></i></button></small></span
+        ><small> version 1.1 </small>
       </div>
+    </div>
+
+    <div class="settings float-end d-flex" id="settings-tray">
+      <i
+        class="fa-sharp fa-solid fa-gear"
+        style="color: rgb(245, 241, 241)"
+        onclick="openTray()"
+        id="lightTheme"
+      ></i>
+      <i
+        class="fa-sharp fa-solid fa-gear hidden-icons"
+        style="color: red"
+        id="redTheme"
+        onclick="redTheme()"
+      ></i>
+      <i
+        class="fa-sharp fa-solid fa-gear hidden-icons"
+        style="color: yellow"
+        id="yellowTheme"
+        onclick="yellowTheme()"
+      ></i>
+      <i
+        class="fa-sharp fa-solid fa-gear hidden-icons"
+        style="color: green"
+        id="greenTheme"
+        onclick="greenTheme()"
+      ></i>
+      <i
+        class="fa-solid fa-xmark hidden-icons"
+        id="closeBtn"
+        onclick="closeTray()"
+      ></i>
     </div>
 
     <div class="container" id="body">
       <div class="todo-title-wrapper mt-3">
         <h3 class="float-start">All Tasks</h3>
         <button
-          class="btn task-btn float-end"
+          class="btn task-btn float-end red-bg"
           data-bs-toggle="modal"
           data-bs-target="#new-task"
+          id="new-task-btn"
         >
           New Task <i class="fa-solid fa-plus"></i>
         </button>
@@ -74,7 +116,12 @@
                   required
                 />
               </div>
-              <input type="submit" value="Add ToDo" class="btn task-btn" />
+              <input
+                type="submit"
+                value="Add ToDo"
+                class="btn task-btn red-bg"
+                id="add-todo"
+              />
             </form>
           </div>
         </div>
@@ -123,7 +170,12 @@
               </div>
               <input type="hidden" id="taskId" />
 
-              <input type="submit" value="Save" class="btn task-btn" />
+              <input
+                type="submit"
+                value="Save"
+                class="btn task-btn red-bg"
+                id="save-btn"
+              />
             </form>
           </div>
         </div>
