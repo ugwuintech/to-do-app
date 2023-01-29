@@ -110,3 +110,37 @@ function yellowTheme() {
   saveBtn.className = "btn task-btn yellow-bg";
   closeTray();
 }
+
+// Time and alarm
+const selectMenu = document.getElementsByClassName("select");
+const selectMenu = document.getElementsByClassName("select");
+
+for (let i = 12; i > 0; i--) {
+  i = i < 10 ? "0" + i : i;
+  let option = `<option class="option" value="${i}">${i}</option>
+`;
+  selectMenu[0].firstElementChild.insertAdjacentHTML("afterend", option);
+}
+
+for (let i = 59; i > 0; i--) {
+  i = i < 10 ? "0" + i : i;
+  let option = `<option class="option" value="${i}">${i}</option>
+`;
+  selectMenu[1].firstElementChild.insertAdjacentHTML("afterend", option);
+}
+
+for (let i = 2; i > 0; i--) {
+  let ampm = i == 1 ? "AM" : "PM";
+  let option = `<option class="option" value="${ampm}">${ampm}</option>
+`;
+  selectMenu[2].firstElementChild.insertAdjacentHTML("afterend", option);
+}
+
+setInterval(() => {
+  // getting hours, minutes, secs
+  let date = new Date();
+  (h = date.getHours()),
+    (m = date.getMinutes()),
+    (s = date.getSeconds()),
+    (ampm = "AM");
+});
