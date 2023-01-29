@@ -79,6 +79,21 @@ h1 {
   font-size: 30px;
 }
 
-.hidden-icons {
-  /* display: none; */
+.time {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.time .column {
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+.time .column .select {
+  color: white;
+}
+.time .column .select .option {
+  color: black;
 }
